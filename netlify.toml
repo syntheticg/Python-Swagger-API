@@ -1,0 +1,8 @@
+[build]
+  command = "pip install -r requirements.txt && flask run"
+  publish = "static"
+
+[[redirects]]
+  from = "/*"
+  to = "/app.py"
+  status = 200
